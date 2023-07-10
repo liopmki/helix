@@ -29,7 +29,14 @@ auto-pairs = true
 [editor.statusline]
 left = ["mode", "spinner"]
 center = ["file-name"]
-right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+right = [
+  "diagnostics",
+  "selections",
+  "position",
+  "file-encoding",
+  "file-line-ending",
+  "file-type",
+]
 separator = "│"
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
@@ -58,7 +65,7 @@ space = "·"
 nbsp = "⍽"
 tab = "→"
 newline = "⏎"
-tabpad = "·" # Tabs will look like "→···" (depending on tab width)
+tabpad = "·"
 
 [editor.indent-guides]
 render = true
@@ -66,5 +73,5 @@ character = "╎"
 skip-levels = 1
 
 [keys.normal]
-C-s = ":w"
-'=' = ":fmt"
+C-s = ":w"   # 保存文件
+'=' = ":fmt" # 格式化文件
