@@ -1,0 +1,70 @@
+theme = "catppuccin_macchiato"
+
+[editor]
+scrolloff = 8
+mouse = true
+middle-click-paste = true
+scroll-lines = 3
+shell = ["pwsh", "C:\\Users\\Administrator"]
+line-number = "relative"
+cursorline = true
+cursorcolumn = false
+gutters = ["diagnostics", "spacer", "line-numbers", "spacer", "diff"]
+auto-completion = true
+auto-format = true
+auto-save = true
+idle-timeout = 300
+completion-trigger-len = 1
+completion-replace = false
+auto-info = true
+true-color = true
+undercurl = true
+rulers = [80]
+bufferline = "multiple"
+color-modes = true
+text-width = 80
+workspace-lsp-roots = []
+auto-pairs = true
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.lsp]
+enable = true
+display-messages = true
+auto-signature-help = true
+display-inlay-hints = false
+display-signature-help-docs = true
+snippets = true
+goto-reference-include-declaration = true
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+newline = "none"
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+tab = "→"
+newline = "⏎"
+tabpad = "·" # Tabs will look like "→···" (depending on tab width)
+
+[editor.indent-guides]
+render = true
+character = "╎"
+skip-levels = 1
+
+[keys.normal]
+C-s = ":w"
+'=' = ":fmt"
