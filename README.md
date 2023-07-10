@@ -1,1 +1,1 @@
-This is my personal config
+This is my personal helix configuration
