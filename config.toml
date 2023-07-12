@@ -73,5 +73,5 @@ character = "╎"
 skip-levels = 1
 
 [keys.normal]
-C-s = ":w"   # 保存文件
+# C-s = ":w"   # 保存文件
 '=' = ":fmt" # 格式化文件
